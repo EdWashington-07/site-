@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Instituto Politécnico 30 de Setembro</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" /><style>
+        body {
+    font-family: Arial, sans-serif;
+    background:black;
+    line-height: 1.6;
+    color: white;
+    max-width: 960px;
+    margin: 100 auto;
+    padding: 22px;
+}
+p {
+    font-size:26px;
+}
+b {
+    font-size:60px;
+    color:yellow;
+}
+h1 {
+    font-size:40px;
+    color:gold;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#form-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px; 
+}
+
+input,
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 35px;
+    border: 2px solid #555;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color:#ff1515;
+    color: black; 
+    cursor: pointer;
+    width: 100%;
+    padding: 12px;
+    font-size: 35px;
+    border: 2px solid #555;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: yellow;
+}
+        body {
+  font-family: Arial, sans-serif;
+  margin:0;
+  padding:1;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 40px;
+}
+
+header h1 {
+  margin: 10;
+}
+
+nav {
+  background-color: #555;
+  color: #fff;
+  font-size:30px;
+  padding: 5px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 2px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+main section {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color:#555;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <marquee><b>"Instituto Politécnico 30 de Setembro n°2039"</b></marquee>
+    </header>
+    <nav>
+      <ul><section id="about">
+        
+        <li><a href="#programs">Programas</a></li><br><br>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+    <main>
+      
+        <h1>Sobre nós</h1>
+        <p>O <strong>Instituto Politécnico 30 de Setembro,</strong> é uma escola dedicada à excelência acadêmica, e à formação de cidadãos responsáveis e comprometidos <br>com o desenvolvimento do seu País.</p>
+      </section>
+      
+      <section id="programs">
+        <h1>Cursos Disponíveis:</h1>
+        <ul><h2>
+          <li>Técnico de Informática</li>
+          <li>Eletricidade Auto</li>
+          <li>Tele Comunicações </li>
+        </h2></ul>
+      </section>
+      <main>
+            <form>
+            <section id="login-section">            
+            <h1>Por Favor, Faça Sua Inscrição</h1>
+           <h2> <form id="login-form">
+                <label for="first name">Nome Completo :</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="age">Idade:</label>
+                <input type="number" id="age" name="age" required><br>
+
+                <label for="birthdate">Data de Nascimento:</label>
+                <input type="date" id="birthdate" name="birthdate" required><br>
+
+                <label for="phone">Número de Telefone:</label>
+                <input type="tel" id="phone" name="phone" required><br>
+
+                <label for="id-number">Número do Bilhete de Identidade:</label>
+                <input type="text" id="id-number" name="id-number" required> </h2><br>
+
+                <button type="submit">Inscrever-se</button>
+            </form>
+        </section>
+
+        <section id="student-list-section" style="display: inline;">
+            <h2></h2>
+            <div id="student-list">
+            </div>
+        </section>
+           <h1>Endereço</h1>
+        <h2><strong><adress>Benfica, Zona Verde-2<br>Luanda</adress></strong></h2>
+        <h1>Telefone</h1>
+        <h2><strong>☎️956278874</strong>
+        <br><h1>Email</h1>
+        <h2><strong>📧contato@ip30setembro.edu.ao</strong></h2>
+      </section>
+    </main> 
+    <footer>
+      <h2>Copyright © 2024<br>📚Instituto Politécnico 30 de Setembro
+      </h2>
+     </footer>
+    <script src="script.js">
+        // Optional JavaScript code for functionality such as a hamburger menu or
+// other interactive elements.</script>
+<script>
+var nome=prompt("Qual é o Seu Nome? ") //Quer Saber, se és uma Pessoa!
+        alert("Seja Bem Vindo ! " + nome );
+        
+        function student() {
+            var tn1 = document.getElementById("name")
+            var tn2 = document.querySelector("input#age")
+            var tn3 = document.getElementById("birthdate")
+            var tn4 = document.getElementById("phone")
+            var tn5 = document.getElementById("id-number")
+            var res = document.getElementById("res")
+            var n1 = Name(tn1. value)
+            var n2 = age(tn2. value)
+            var n2 = birthdate(tn3. value)
+            var n2 = phone(tn2. value)
+            var n2 = id-number(tn2. value)
+            var s = n1 + n2 + n3 + n4 + n5
+            res.innerHTML = s
+        }
+        
+    </script>
+  </body>
+</html>
